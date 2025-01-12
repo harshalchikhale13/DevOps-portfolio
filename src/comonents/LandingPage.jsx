@@ -79,7 +79,7 @@ const LandingPage = () => {
           <div className="name">
             <h1>
               <Typewriter
-                words={["I AM Harshal"]}
+                words={["I'M Harshal"]}
                 loop={1}
                 cursor
                 cursorStyle="|"

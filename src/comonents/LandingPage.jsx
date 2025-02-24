@@ -109,7 +109,7 @@ const LandingPage = () => {
           <div className="btn">
             <button>hire me</button>
             <div className="hire">
-            <a href="/Harshal_Chikhale.pdf" download="Harshal_Chikhale.pdf">
+            <a href="/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal_Chikhale.pdf">
               <button>get cv</button>
               </a>
             </div>

@@ -302,9 +302,11 @@ Beyond technical proficiency, I bring strong leadership capabilities, honed thro
 Key Features & Implementation:
 Containerization with Docker: Packaged applications into lightweight, portable containers for consistent deployment across environments.
 CI/CD Automation with Jenkins & GitHub Actions: Streamlined the build, test, and deployment process to ensure faster and error-free releases.
+              <P>
 Infrastructure as Code (IaC) with Terraform: Automated provisioning of cloud infrastructure, improving efficiency and reducing manual setup time.
 Configuration Management with Ansible: Ensured system consistency and automated server configurations for smooth operations.
 Cloud Integration with AWS: Deployed applications on AWS EC2, optimizing scalability and reliability.
+              </P>
 Monitoring with Prometheus & Grafana: Implemented real-time performance tracking, reducing downtime and enhancing observability.
 Scripting with Python: Developed automation scripts for managing containers, log analysis, and system monitoring.
             </p>

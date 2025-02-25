@@ -4,10 +4,8 @@ import { SiTailwindcss, SiReact, SiSvelte, SiMongodb } from "react-icons/si";
 import { TbBrandDocker, TbBrandJavascript, TbBrandNextjs, TbBrandOpenSource } from "react-icons/tb";
 import { AiFillAmazonSquare, AiOutlineDollar, AiOutlineHtml5, AiOutlineProject } from "react-icons/ai";
 import "./LandingPage.css";
-// import FaceSvg from "../assets/mf-avatar.svg";
 import About from "../assets/about-us.png.svg";
 import div_befor from "../assets/div_before.svg";
-// import Logo from "../assets/logo.png.svg";
 import Logo3 from "../assets/logo3.png.svg";
 import s1 from "../assets/download-s1.png";
 import s2 from "../assets/download-s2.png";
@@ -17,10 +15,9 @@ import s5 from "../assets/download-s5.png";
 import Home_avtar from "../assets/home-right.png.svg";
 import { Typewriter } from "react-simple-typewriter";
 
-
+// Scroll event listener for navbar background change
 var navbar = document.querySelector("header");
 window.onscroll = function () {
-  // pageYOffset or scrollY
   if (window.pageYOffset > 0) {
     navbar.classList.add("scrolled");
   } else {
@@ -31,43 +28,27 @@ window.onscroll = function () {
 const LandingPage = () => {
   return (
     <>
+      {/* Header Section */}
       <header className="header">
         <div className="content navbar">
           <div className="logo">
-            {/* <img src={Logo} alt={" not found"} /> */}
             <h1>Harshal_DevOps</h1>
           </div>
           <nav>
             <ul>
-              <li>
-                <a href="#hero">home</a>
-              </li>
-              <li>
-                <a href="#intro">about</a>
-              </li>
-              <li>
-                <a href="#portfolio">portfolio</a>
-              </li>
-              <li>
-                <a href="#services">service</a>
-              </li>
-              <li>
-                <a href="#">pages</a>
-              </li>
-              <div className="drop">
-                <li>
-                  <a href="https://medium.com/@harshalchikhale9822">
-                    blogs
-                  </a>
-                </li>
-              </div>
-              <li>
-                <a href="#contact">contact</a>
-              </li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#intro">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Service</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="https://medium.com/@harshalchikhale9822">Blogs</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
       </header>
+
+      {/* Hero Section */}
       <section className="content landingpage" id="hero">
         <div className="left left-content">
           <div className="head">
@@ -78,293 +59,100 @@ const LandingPage = () => {
           </div>
           <div className="name">
             <h1>
-              <Typewriter
-                words={["I'M Harshal"]}
-                loop={1}
-                cursor
-                cursorStyle="|"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={80}
-              />
+              <Typewriter words={["I'M Harshal"]} loop={1} cursor cursorStyle="|" typeSpeed={70} deleteSpeed={50} delaySpeed={80} />
             </h1>
             <h5 className="about1">
-              <Typewriter
-                words={[
-                  "An Passionate DevOps Engineer",
-
-                  "Freelancer",
-                  "&",
-                  "Developer",
-                ]}
-                loop={0}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={0}
-                delaySpeed={1000}
-              />
+              <Typewriter words={["A Passionate DevOps Engineer", "Freelancer", "&", "Developer"]} loop={0} cursor cursorStyle="_" typeSpeed={70} deleteSpeed={0} delaySpeed={1000} />
             </h5>
           </div>
           <div className="btn">
-            <button>hire me</button>
+            <button>Hire Me</button>
             <div className="hire">
-            <a href="/assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
-              <button>get cv</button>
+              <a href="/assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
+                <button>Get CV</button>
               </a>
             </div>
           </div>
         </div>
         <div className="right forgot">
-          <img src={Home_avtar} alt="" />
+          <img src={Home_avtar} alt="Hero Avatar" />
         </div>
       </section>
+
+      {/* About Section */}
       <section className="intro" id="intro">
         <div className="left forgot">
-          <img src={About} alt="" />
+          <img src={About} alt="About Me" />
         </div>
         <div className="right">
           <div className="about">
             <div className="about-text">
-              <h2>
-                let’s <br />
-                Introduce about <br />
-                myself
-              </h2>
+              <h2>Let’s Introduce About Myself</h2>
               <p>
-              I am Harshal Chikhale, a dynamic and results-driven DevOps Engineer with over 1 years of experience in designing, automating, and optimizing cloud-based infrastructures and deployment pipelines. I specialize in leveraging cutting-edge technologies like Kubernetes, Docker, and Ansible to create scalable, efficient, and secure systems. My expertise spans multiple cloud platforms, including AWS, Microsoft Azure, and Google Cloud, where I have implemented serverless architectures and microservices to support high-performance applications.
-
-I have a proven track record of developing robust CI/CD pipelines using Jenkins, GitLab CI/CD, and GitHub Actions, enabling seamless integration, deployment, and monitoring of applications. My proficiency in tools like Prometheus and Grafana ensures real-time monitoring, performance optimization, and system reliability. I am equally skilled in managing version control systems like Git and GitHub to foster collaborative team environments.
-
-Beyond technical proficiency, I bring strong leadership capabilities, honed through my role as Junior Under Officer in NCC, where I successfully managed and motivated a team of over 60 individuals for 2 years. I thrive on solving complex challenges, learning new technologies, and driving continuous improvement. With a commitment to delivering innovative and scalable DevOps solutions, I aim to empower organizations to achieve operational excellence.
+                I am Harshal Chikhale, a dynamic DevOps Engineer with experience in designing, automating, and optimizing cloud-based infrastructures. 
+                I specialize in Kubernetes, Docker, and Ansible, creating scalable, efficient, and secure systems across AWS, Azure, and GCP.
               </p>
             </div>
             <div className="download-btn">
-            <a href="/assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
-              <button >Download CV</button>
+              <a href="/assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
+                <button>Download CV</button>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section className="content content-logo" id="portfolio">
-        <div className="left">
-          <div className="top">
-            <div className="image">
-              <a href="#">
-                <AiFillAmazonSquare style={{ color: "orange", fontSize: "70px" }} />
-                <p>AWS</p>
-              </a>
-            </div>
-            <div className="image">
-              <a href="#">
-                <TbBrandNextjs style={{ color: "blue", fontSize: "70px" }} />
-                <p>Next JS</p>
-              </a>
-            </div>
-            <div className="image">
-              <a href="#">
-                <TbBrandDocker
-                  style={{ color: "Bule", fontSize: "70px" }}
-                />
-                <p>Docker</p>
-              </a>
-            </div>
-          </div>
-          <div className="top">
-            <div className="image">
-              <a href="#">
-                <AiOutlineProject style={{ color: "purple", fontSize: "70px" }} />
-                <p>Jenkins</p>
-              </a>
-            </div>
-            <div className="image">
-              <a href="#">
-                <SiTailwindcss
-                  style={{ color: "light-blue", fontSize: "70px" }}
-                />
-                <p>Kunernetes</p>
-              </a>
-            </div>
-            <div className="image">
-              <a href="#">
-                <SiReact style={{ color: "blue", fontSize: "70px" }} />
-                <p>react</p>
-              </a>
-            </div>
-          </div>
-          <div className="top">
-            <div className="image">
-              <a href="#">
-                <SiSvelte style={{ color: "red  ", fontSize: "50px" }} />
-                <p>Redhat-Linux</p>
-              </a>
-            </div>
-            <div className="image">
-              <a href="#">
-                <SiMongodb style={{ color: "green", fontSize: "60px" }} />
-                <p>mongodb</p>
-              </a>
-            </div>
-            <div className="image">
-              <a href="#">
-                <TbBrandOpenSource  style={{ color: "green", fontSize: "60px" }} />
-                <img src={Logo3} alt="" />
-                <p>Ansible</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="right Experience">
-          <div className="sk wid">
-            <div className="div-image">
-              <img src={div_befor} alt="" />
-            </div>
-            <div className="contact wid">
-              <div className="year wid">
-                <h1>1+</h1>
-                <h3>
-                  Years
-                  <br />
-                  Experience
-                  <br />
-                  Working
-                </h3>
-              </div>
 
-              <div className="no wid">
-                <div className="sub-no">
-                  <p>call us now</p>
-                  <h2 type="tel">(+91) 9322908142</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="offers" id="services">
-        <div className="headline">
-          <h1>service offers</h1>
-          <p>
-          Harnessing the spirit of creativity to deliver beyond expectations.   
-          </p>
-        </div>
-        <div className="offer-content">
-          <div className="offer-img">
-            <img src={s1} alt="" />
-            <h2>Cloud_Computing</h2>
-            <p>
-            I specialize in providing secure and scalable cloud solutions tailored to your needs. From building cloud-native architectures to optimizing deployments, I ensure seamless performance and reliability to help your projects succeed
-
-            </p>
-          </div>
-
-          <div className="offer-img">
-            <img src={s2} alt="" />
-            <h2>Kubernetes</h2>
-            <p>
-            I design and manage scalable Kubernetes solutions to ensure efficient container orchestration. From deployment to monitoring, I focus on optimizing workloads, enhancing reliability, and streamlining application performance for seamless project delivery.            </p>
-          </div>
-
-          <div className="offer-img">
-            <img src={s3} alt="" />
-            <h2>Logging & monitoring</h2>
-            <p>
-            I provide reliable logging and monitoring solutions to ensure your systems run smoothly. By setting up tools like Prometheus and Grafana, I deliver real-time insights, track performance, and quickly detect and resolve issues to maintain optimal system health.
-            </p>
-          </div>
-
-          <div className="offer-img">
-            <img src={s4} alt="" />
-            <h2>CI/CD</h2>
-            <p>
-            I design and implement robust CI/CD pipelines that automate testing, integration, and deployment. This accelerates software delivery, reduces errors, and ensures seamless production releases, enabling your team to innovate faster with confidence.
-            </p>
-          </div>
-
-          <div className="offer-img">
-            <img src={s5} alt="" />
-            <h2>Building Infrastructure</h2>
-            <p>
-            I design and build scalable, secure, and highly available infrastructure tailored to your needs. Leveraging cloud platforms and infrastructure-as-code tools, I ensure efficiency, reliability, and cost optimization for your systems.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="content">
+      {/* Portfolio Section */}
+      <section className="content" id="portfolio">
         <div className="project">
-          <h1>
-            Projects <br />
-            Container Management Tool
-            <p>
-              The Container Management Tool is designed to simplify the deployment, scaling, and monitoring of containerized applications. This project focuses on automating infrastructure, optimizing resource utilization, and ensuring seamless application management using industry-leading DevOps tools.
+          <h1>Projects</h1>
+          <h2>Container Management Tool</h2>
+          <p>
+            The **Container Management Tool** simplifies the deployment, scaling, and monitoring of containerized applications.  
+            This project automates infrastructure, optimizes resources, and ensures seamless application management using industry-leading DevOps tools.
+          </p>
 
-Key Features & Implementation:
-Containerization with Docker: Packaged applications into lightweight, portable containers for consistent deployment across environments.
-CI/CD Automation with Jenkins & GitHub Actions: Streamlined the build, test, and deployment process to ensure faster and error-free releases.
-            <br>
-Infrastructure as Code (IaC) with Terraform: Automated provisioning of cloud infrastructure, improving efficiency and reducing manual setup time.
-Configuration Management with Ansible: Ensured system consistency and automated server configurations for smooth operations.
-Cloud Integration with AWS: Deployed applications on AWS EC2, optimizing scalability and reliability.
-            </br>
-Monitoring with Prometheus & Grafana: Implemented real-time performance tracking, reducing downtime and enhancing observability.
-Scripting with Python: Developed automation scripts for managing containers, log analysis, and system monitoring.
-            </p>
-          </h1>
+          <h3>Key Features & Implementation:</h3>
+          <ul>
+            <li><strong>Containerization with Docker:</strong> Packaged applications into lightweight containers.</li>
+            <li><strong>CI/CD Automation with Jenkins & GitHub Actions:</strong> Automated build, test, and deployment.</li>
+            <li><strong>Infrastructure as Code (IaC) with Terraform:</strong> Automated cloud provisioning.</li>
+            <li><strong>Configuration Management with Ansible:</strong> Ensured system consistency.</li>
+            <li><strong>Cloud Integration with AWS:</strong> Deployed applications on AWS EC2.</li>
+            <li><strong>Monitoring with Prometheus & Grafana:</strong> Real-time performance tracking.</li>
+            <li><strong>Scripting with Python:</strong> Automated container management and log analysis.</li>
+          </ul>
         </div>
       </section>
+
+      {/* Contact Section */}
       <section className="update-main" id="contact">
         <div className="update">
           <div className="text">
-            <h2>get update from anywhere</h2>
-            <p>
-            Whispers of the wind carry stories untold, fear not their song.
-            </p>
+            <h2>Get Updates</h2>
+            <p>Stay connected and receive the latest updates.</p>
           </div>
           <div className="btns">
-            <input
-              type="email"
-              className="email"
-              name="email"
-              placeholder="email address"
-            />
+            <input type="email" className="email" name="email" placeholder="Email address" />
             <button>Get Started</button>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
       <section className="footer">
         <footer>
           <div className="text">
             <h1>Harshal_DevOps</h1>
-            <h2>follow me</h2>
+            <h2>Follow Me</h2>
             <div className="icon">
-              <a href="https://www.linkedin.com/in/harshal-chikhale/">
-                <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-              </a>
-              {" "}
-              <a href="https://www.instagram.com/im_harshal_chikhale">
-               <i className="fa fa-instagram" aria-hidden="true"></i>
-              {" "}
-              </a>
-              <a herf="https://github.com/harshal-chikhale">
-                <i className="fa fa-github-square" aria-hidden="true"></i>
-              </a>
-              <a herf="https://x.com/Harshchikhale02">
-              <i className="fa fa-twitter-square" aria-hidden="true"></i>
-              {" "}
-              </a>
+              <a href="https://www.linkedin.com/in/harshal-chikhale/"><i className="fa fa-linkedin-square"></i></a>
+              <a href="https://www.instagram.com/im_harshal_chikhale"><i className="fa fa-instagram"></i></a>
+              <a href="https://github.com/harshal-chikhale"><i className="fa fa-github-square"></i></a>
+              <a href="https://x.com/Harshchikhale02"><i className="fa fa-twitter-square"></i></a>
             </div>
           </div>
-          <p>
-            Copyright ©2022 All rights reserved | This template is made with
-            <span>
-              <a href="https://github.com/harshal-chikhale">
-                {" "}
-                Harshal_Chikhale{" "}
-              </a>
-            </span>
-            with 💓
-          </p>
+          <p>Copyright ©2022 | Designed by <a href="https://github.com/harshal-chikhale">Harshal_Chikhale</a> with 💓</p>
         </footer>
       </section>
     </>

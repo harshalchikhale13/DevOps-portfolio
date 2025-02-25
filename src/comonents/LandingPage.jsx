@@ -109,7 +109,7 @@ const LandingPage = () => {
           <div className="btn">
             <button>hire me</button>
             <div className="hire">
-            <a href="/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
+            <a href="/assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
               <button>get cv</button>
               </a>
             </div>
@@ -140,7 +140,7 @@ Beyond technical proficiency, I bring strong leadership capabilities, honed thro
               </p>
             </div>
             <div className="download-btn">
-            <a href="../assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
+            <a href="/assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
               <button >Download CV</button>
               </a>
             </div>

@@ -91,7 +91,7 @@ const LandingPage = () => {
             <h5 className="about1">
               <Typewriter
                 words={[
-                  "I'm Aspiring DevOps Engineer",
+                  "An Passionate DevOps Engineer",
 
                   "Freelancer",
                   "&",
@@ -109,7 +109,7 @@ const LandingPage = () => {
           <div className="btn">
             <button>hire me</button>
             <div className="hire">
-            <a href="/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal_Chikhale.pdf">
+            <a href="/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
               <button>get cv</button>
               </a>
             </div>
@@ -132,7 +132,7 @@ const LandingPage = () => {
                 myself
               </h2>
               <p>
-              I am Harshal Chikhale, a dynamic and results-driven DevOps Engineer with over 2 years of experience in designing, automating, and optimizing cloud-based infrastructures and deployment pipelines. I specialize in leveraging cutting-edge technologies like Kubernetes, Docker, and Ansible to create scalable, efficient, and secure systems. My expertise spans multiple cloud platforms, including AWS, Microsoft Azure, and Google Cloud, where I have implemented serverless architectures and microservices to support high-performance applications.
+              I am Harshal Chikhale, a dynamic and results-driven DevOps Engineer with over 1 years of experience in designing, automating, and optimizing cloud-based infrastructures and deployment pipelines. I specialize in leveraging cutting-edge technologies like Kubernetes, Docker, and Ansible to create scalable, efficient, and secure systems. My expertise spans multiple cloud platforms, including AWS, Microsoft Azure, and Google Cloud, where I have implemented serverless architectures and microservices to support high-performance applications.
 
 I have a proven track record of developing robust CI/CD pipelines using Jenkins, GitLab CI/CD, and GitHub Actions, enabling seamless integration, deployment, and monitoring of applications. My proficiency in tools like Prometheus and Grafana ensures real-time monitoring, performance optimization, and system reliability. I am equally skilled in managing version control systems like Git and GitHub to foster collaborative team environments.
 
@@ -140,7 +140,7 @@ Beyond technical proficiency, I bring strong leadership capabilities, honed thro
               </p>
             </div>
             <div className="download-btn">
-            <a href="../assets/Harshal_Chikhale.pdf" download="Harshal_Chikhale.pdf">
+            <a href="../assets/Harshal-Chikhale-DevOps-Engineer-Resume-2025" download="Harshal-Chikhale-DevOps-Engineer-Resume-2025">
               <button >Download CV</button>
               </a>
             </div>
@@ -291,14 +291,26 @@ Beyond technical proficiency, I bring strong leadership capabilities, honed thro
           </div>
         </div>
       </section>
-      {/* <section className="content">
+      <section className="content">
         <div className="project">
           <h1>
-            quality work <br />
-            Recently done project
+            Projects <br />
+            Container Management Tool
+            <p>
+              The Container Management Tool is designed to simplify the deployment, scaling, and monitoring of containerized applications. This project focuses on automating infrastructure, optimizing resource utilization, and ensuring seamless application management using industry-leading DevOps tools.
+
+Key Features & Implementation:
+Containerization with Docker: Packaged applications into lightweight, portable containers for consistent deployment across environments.
+CI/CD Automation with Jenkins & GitHub Actions: Streamlined the build, test, and deployment process to ensure faster and error-free releases.
+Infrastructure as Code (IaC) with Terraform: Automated provisioning of cloud infrastructure, improving efficiency and reducing manual setup time.
+Configuration Management with Ansible: Ensured system consistency and automated server configurations for smooth operations.
+Cloud Integration with AWS: Deployed applications on AWS EC2, optimizing scalability and reliability.
+Monitoring with Prometheus & Grafana: Implemented real-time performance tracking, reducing downtime and enhancing observability.
+Scripting with Python: Developed automation scripts for managing containers, log analysis, and system monitoring.
+            </p>
           </h1>
         </div>
-      </section> */}
+      </section>
       <section className="update-main" id="contact">
         <div className="update">
           <div className="text">

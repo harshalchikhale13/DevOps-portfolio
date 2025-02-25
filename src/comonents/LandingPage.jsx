@@ -88,7 +88,7 @@ const LandingPage = () => {
         </div>
         <div className="right">
           <div className="about">
-            <h2>Let’s Introduce About Myself</h2>
+            <h2>Let’s Introduce Myself</h2>
             <p>
               I am Harshal Chikhale, a DevOps Engineer skilled in cloud automation, CI/CD, and infrastructure optimization. 
               With expertise in Docker, Ansible, and Kubernetes, I build scalable, secure, and efficient systems across AWS, Azure, and GCP to drive seamless deployments and reliability.

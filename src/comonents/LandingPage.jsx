@@ -32,7 +32,7 @@ const LandingPage = () => {
     <>
       {/* Header Section */}
       <header className="header">
-        <div className="content navbar">
+{/*         <div className="content navbar">
           <div className="logo">
             <h1>Harshal_DevOps</h1>
           </div>
@@ -47,7 +47,7 @@ const LandingPage = () => {
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-        </div>
+        </div> */}
       </header>
 
       {/* Hero Section */}
